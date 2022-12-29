@@ -1,0 +1,52 @@
+@use '../variables'
+@use '../mixins'
+
+
+#main-container
+    display: flex
+    width: 90%
+    margin: 0 auto
+    @media(max-width: 780px)
+        flex-direction: column
+
+
+    #historia-container
+        width: 50%
+        padding: 3rem
+        display: flex
+        flex-direction: column
+        @media(max-width: 780px)
+            width: 100%
+
+        @media(max-width: 500px)
+            padding: 0
+
+        #p-titulo
+            letter-spacing: 10px
+            font-size: 1.5rem
+            @media(max-width: 500px)
+                font-size: 1.2rem
+
+        h1
+            font-size: 4.5rem
+            margin-bottom: 1rem
+            @media(max-width: 500px)
+                font-size: 3.5rem
+
+        .texto
+            line-height: 1.4rem
+            margin-bottom: 1rem
+
+    #img-container
+        width: 50%
+        @include mixins.center
+
+        @media(max-width: 780px)
+            width: 100%
+            align-items: center
+            
+        
+        img
+            width: 90%
+            @media(max-width: 780px)
+                width: 20rem

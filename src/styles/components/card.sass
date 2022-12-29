@@ -1,0 +1,37 @@
+@use '../variables'
+@use '../mixins'
+
+.card
+    width: 25%
+    background: variables.$gradient
+    padding: 2rem
+    border-radius: 10px
+    min-width: 300px
+    cursor: pointer
+    transition: .4s
+    border: 1px solid black
+
+    @media(max-width: 590px)
+        width: 90%
+        padding: 1rem
+
+    .trophy
+        @include mixins.center
+        font-size: 4rem
+        padding-bottom: 1rem
+        color: #FFF
+
+    .info
+        // background: variables.$cor-primaria
+        margin: .8rem 0
+
+        h3
+            font-weight: bold
+
+        span
+            font-size: 1.2rem
+            font-weight: 100
+
+
+    &:hover
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px

@@ -3,13 +3,14 @@
 
 .card
     width: 25%
-    background: variables.$gradient
-    padding: 2rem
-    border-radius: 10px
+    // background: variables.$gradient
+    padding: .2rem
+    // border-radius: 10px
     min-width: 300px
     cursor: pointer
     transition: .4s
-    border: 1px solid black
+    border: 2px solid black
+    background-color: #f3f3f3
 
     @media(max-width: 590px)
         width: 90%
@@ -18,12 +19,15 @@
     .trophy
         @include mixins.center
         font-size: 4rem
-        padding-bottom: 1rem
-        color: #FFF
+        padding: 2rem
+        color: #000000
+        background: variables.$gradient
 
     .info
         // background: variables.$cor-primaria
-        margin: .8rem 0
+        margin: .5rem 0
+        padding: .5rem 2rem
+        list-style: none
 
         h3
             font-weight: bold

@@ -1,16 +1,21 @@
-import FooterContainer from './components/FooterContainer'
-import MainContainer from './components/MainContainer'
-import NavContainer from './components/NavContainer'
-import TitlesContainer from './components/TitlesContainer'
 import './styles/app.sass'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from "./pages/Home"
+import NavContainer from './components/NavContainer'
+import FooterContainer from './components/FooterContainer'
+import Trophies from './pages/Trophies'
 
 function App() {
   return (
     <div className="App">
-      <NavContainer />
-      <MainContainer />
-      <TitlesContainer />
-      <FooterContainer />
+      <BrowserRouter>
+        <NavContainer />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/trophies' element={<Trophies />} />
+        </Routes>
+        <FooterContainer />
+      </BrowserRouter>
     </div>
   )
 }

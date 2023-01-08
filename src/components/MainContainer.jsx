@@ -1,5 +1,8 @@
 import '../styles/components/maincontainer.sass'
 import Football from '../images/football.svg'
+import BoaEsporte from '../images/BoaEsporte.png'
+import BoaEsporteGif from '../images/BE.gif'
+
 
 const MainContainer = () => {
   return (

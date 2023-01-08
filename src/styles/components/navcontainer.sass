@@ -6,6 +6,7 @@
     display: flex
     justify-content: space-between
     background: variables.$gradient
+    border-bottom: 5px solid variables.$cor-primaria-texto
     @media(max-width: 780px)
         flex-wrap: wrap
 
@@ -23,7 +24,7 @@
             font-size: 4rem
             margin: 3rem 0
             @media(max-width: 590px)
-                font-size: 2.5rem
+                font-size: 2rem
 
         @media(max-width: 590px)
                 width: 100%
@@ -33,14 +34,19 @@
         @include mixins.center
 
         a
+            display: flex
+            align-items: center
+            justify-content: center
             text-decoration: none
             padding: 1rem 1.2rem
             margin: 0 .5rem
-            background: variables.$cor-primaria-texto
-            color: #fff
-            border-radius: 10px
+            // border-top: 5px solid variables.$cor-primaria-texto
+            color: variables.$cor-primaria-texto
+            text-transform: uppercase
             margin-right: 2rem
             transition: .4s
+            svg
+                margin-right: 10px 
             @media(max-width: 780px)
                 width: 80%
                 margin: 1rem 0
@@ -51,5 +57,8 @@
             
 
         :hover
-            color: variables.$cor-secundaria
+            // border-bottom: 5px solid variables.$cor-primaria-texto
         
+        .active
+            background: variables.$cor-primaria-texto
+            color: variables.$cor-secundaria-texto

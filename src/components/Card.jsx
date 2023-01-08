@@ -7,13 +7,13 @@ const Card = ({trophy, nome, local, ano}) => {
             {trophy}
         </li>
         <li className="info">
-            <h3>Campeonato:</h3><span>{nome}</span>
+            <h3>Campeonato</h3><span>{nome}</span>
         </li>
         <li className="info">
-            <h3>Local:</h3><span>{local}</span>
+            <h3>Local</h3><span>{local}</span>
         </li>
         <li className="info">
-            <h3>Ano:</h3><span>{ano}</span>
+            <h3>Ano</h3><span>{ano}</span>
         </li>
     </ul>
   )

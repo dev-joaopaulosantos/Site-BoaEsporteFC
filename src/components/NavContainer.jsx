@@ -13,7 +13,7 @@ const NavContainer = () => {
         </div>
         <div id="menu-container">
             <NavLink to="/" > <AiOutlineHome />Home</NavLink>
-            <NavLink to="/trophies"><GiTrophyCup />Troféus</NavLink>
+            <NavLink to="/trophies"><GiTrophyCup />Sala de Troféus</NavLink>
         </div>
     </nav>
   )

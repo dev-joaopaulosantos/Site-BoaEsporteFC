@@ -12,7 +12,7 @@ const MainContainer = () => {
             <h1>História</h1>
             <p className='texto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Tempore, suscipit eaque illo cum minima excepturi amet 
-                necessitatibus quod aut dolores quasi repellendus magni 
+                necessitatibus quod aut quasi repellendus magni 
                 iste, mollitia modi autem, consectetur voluptatum rerum?
             </p>
             <p className='texto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
